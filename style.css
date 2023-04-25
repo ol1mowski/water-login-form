@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto:wght@500&family=Shantell+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    overflow-x: hidden;
+}
+
+.first_section {
+    background-image: url('./img/sea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+.href {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    align-items: center;
+    height: 10vh;
+    width: 20vw;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    background: transparent;
+    margin: auto;
+}
+
+.img {
+    transform: translate(-10vw, 20vh);
+    transition: transform 3s;
+}
+
+.img.active {
+    transform: translate(200vw, 20vh);
+}
+
+.second_section {
+    background-image: url('./img/under-water.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 30vw;
+    height: 70vh;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.inp_text, .inp_passwd {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    display: block;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.inp_text.click, .inp_passwd.click {
+    animation: input_frame 3s;
+}
+
+span {
+    font-size: 1.6rem;
+}
+
+button {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.pass, .login {
+    margin-top: 10vh;
+    width: 17vw;
+    height: 7vh;
+    position: relative;
+    top: 11vh;
+    left: 6vw;
+}
+
+button {
+    width: 11vw;
+    height: 5vh;
+    position: relative;
+    top: 21vh;
+    left: 8vw;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    background: transparent;
+    border: none;
+}
+
+@keyframes input_frame {
+    50% {
+        transform: translateY(-5vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
